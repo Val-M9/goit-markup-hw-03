@@ -46,9 +46,10 @@ img {
 /* #region Common */
 
 .container {
-  max-width: calc(1128px + 2 * 156px);
-  padding-left: 156px;
-  padding-right: 156px;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -93,17 +94,17 @@ img {
 .header {
   background-color: var(--white);
   border-bottom: 1px solid var(--light-blue-cl);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .nav-logo {
@@ -121,6 +122,8 @@ img {
 
 .nav-menu {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-item:not(:last-child) {
@@ -185,7 +188,7 @@ img {
 
 .hero-heading {
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   text-align: center;
   font-size: 56px;
   line-height: 1.07;
@@ -193,6 +196,7 @@ img {
 }
 
 .order-btn {
+  min-width: 169px;
   padding: 16px 32px;
   background-color: var(--accent-cl);
   color: var(--white);
@@ -270,8 +274,11 @@ img {
   box-shadow: 0px 1px 1px color-mix(in srgb, var(--dark-cl) 16%, transparent);
 }
 
+.team-card-content {
+  padding: 32px 0;
+}
+
 .team-card-title {
-  padding-top: 32px;
   padding-bottom: 8px;
   color: var(--dark-cl);
   font-size: 20px;
@@ -282,7 +289,6 @@ img {
 }
 
 .team-card-descr {
-  padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -307,12 +313,12 @@ img {
 
 .portfolio-card-content {
   padding: 32px 16px;
-  border-width: 0 1px 1px 1px;
-  border-style: solid;
-  border-color: var(--light-blue-cl);
+  border: 1px solid var(--light-blue-cl);
+  border-top: none;
 }
 
 .portfolio-card-title {
+  margin-bottom: 8px;
   color: var(--dark-cl);
   font-size: 20px;
   font-weight: 500;
